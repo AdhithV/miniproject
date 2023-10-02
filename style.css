@@ -1,110 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
-*{
-   font-family: 'Poppins', sans-serif;
-   margin:0; padding:0;
-   box-sizing: border-box;
-   outline: none; border:none;
-   text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+/* Sass Template */
+/* global classes */
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-
-.container{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding:20px;
-    padding-bottom: 60px;
-}
-.container .content{
-    text-align: center;
-}
-.container .content h3{
-    font-size: 30px;
-    color:#333 ;
-}
-.container .content h3 span{
-    background: crimson;
-    color: #fff;
-    border-radius: 5px;
-    padding:0 10px;
-}
-.container .content h1{
-    font-size: 50px;
-    color:#333 ;
-}
-.container .content h1 span{
-    color:crimson;
-}
-.container .content p{
-   font-size: 25px;
-   margin-bottom: 20px; 
-}
-.container .content .btn{
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 20px;
-    background: #333;
-    color: #fff;
-    margin: 0 5px;
-    text-transform: capitalize;
-}
-.container .content .btn:hover{
-    background: crimson;
+/* typography classes */
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive;
 }
 
-.form-container{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding:20px;
-    padding-bottom: 60px;
-    background: #eee;
+.font-rale {
+  font-family: "Raleway", cursive;
 }
-.form-container form{
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 50px 10px rgba(0,0,0,.1);
-    background: #fff;
-    text-align: center;
-    width: 500px;
+
+.font-rubik {
+  font-family: "Rubik", cursive;
 }
-.form-container form h3{
-    font-size: 30px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #333;
+
+.font-size-12 {
+  font-size: 12px;
 }
-.form-container form input,
-.form-container form select{
-    width: 100%;
-    padding: 10px 15px;
-    font-size: 17px;
-    margin: 8px 0;
-    background: #eee;
-    border-radius: 5px;
+
+.font-size-14 {
+  font-size: 14px;
 }
-.form-container form select option{
-    background: #fff;
+
+.font-size-16 {
+  font-size: 16px;
 }
-.form-container form .form-btn{
-    background: #fbd0d9;
-    color: crimson;
-    text-transform: capitalize;
-    font-size: 20px;
-    cursor: pointer;
+
+.font-size-20 {
+  font-size: 20px;
 }
-.form-container form .form-btn:hover{
-    background: crimson;
-    color: #fff;
+
+/* Color Template  */
+.color-primary {
+  color: #003859;
 }
-.form-container form p{
-    margin-top: 10px;
-    font-size: 20px;
-    color: #333;
+
+.color-primary-bg {
+  background: #003859;
 }
-.form-container form p a{
-    color: crimson;
+
+.color-second {
+  color: #00A5C4;
 }
+
+.color-second-bg {
+  background: #00A5C4;
+}
+
+.color-yellow {
+  color: #FFD289;
+}
+
+.color-yellow-bg {
+  background: #FFD289;
+}
+
+/*  top sale template   */
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span,
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: #003859;
+  padding: 0 1rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem;
+}
+
+/*# sourceMappingURL=style.css.map */
